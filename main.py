@@ -1,16 +1,26 @@
-# This is a sample Python script.
+import os
+from modules.functions import get_order_status, save_contact_info, get_return_policy_info
+from modules.config import get_gpt_response
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    while True:
+        user_input = input("You: ")
+        if user_input == 'exit':
+            print("Chatbot: Goodbye!")
+            break
+        if 'order status' in user_input.lower():
+            order_id = input("Please provide your order ID: ")
+            print("Bot:", get_order_status(order_id))
+        elif 'human representative' in user_input.lower():
+            name = input("Please provide your full name: ")
+            email = input("Please provide your email: ")
+            phone = input("Please provide your phone number: ")
+            print("Bot:", save_contact_info(name, email, phone))
+        elif 'return policy' in user_input.lower():
+            print("Bot:", get_return_policy_info(user_input))
+        else:
+            response = get_gpt_response(user_input)
+            print(f"Chatbot: {response}")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
