@@ -1,5 +1,5 @@
 import os
-from modules.functions import get_order_status, save_contact_info, get_return_policy_info
+from modules.functions import correct_spelling, isOrderStatus, get_order_status, save_contact_info, get_return_policy_info
 from modules.config import get_gpt_response
 
 def main():
@@ -8,7 +8,11 @@ def main():
         if user_input == 'exit':
             print("Chatbot: Goodbye!")
             break
-        if 'order status' in user_input.lower():
+
+        # Correct spelling of user input
+        user_input = correct_spelling(user_input)
+        # print(user_input)
+        if isOrderStatus(user_input):
             order_id = input("Please provide your order ID: ")
             print("Bot:", get_order_status(order_id))
         elif 'human representative' in user_input.lower():
