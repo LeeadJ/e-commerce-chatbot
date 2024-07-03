@@ -6,16 +6,11 @@ def isReturnPolicyRequest(user_input):
     for phrase in phrases:
         words = phrase.split()
         if all(word in user_input for word in words):
-            print("Bot: What would you like to know about the return policy?")
+            print("Chatbot: What would you like to know about the return policy?")
             return True
     return False
 
 def get_return_policy_info(user_input):
-    # responses = {
-    #     "What is the return policy for items purchased at our store?":
-    #     "Are there any items that cannot be returned under this policy?":
-    #     "How will I receive my refund?":
-    # }
     return_policy_trigger = [
         "what is the return policy",
         "what is the return policy on items",

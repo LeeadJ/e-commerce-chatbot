@@ -41,7 +41,7 @@ def isHumanRepresentativeRequest(user_input):
         'contact human', 'contact representative', 'need help from a person', 'need to talk to someone',
         'connect me with a human', 'connect with a representative', 'human assistance', 'real person',
         'live agent', 'customer service', 'customer support', 'talk someone', 'talk human', 'speak human',
-        'talk person', 'speak person', 'contact person', 'human rep', 'want rep', 'need rep'
+        'talk person', 'speak person', 'contact person', 'human rep', 'want rep', 'need rep', 'speak representative'
     ]
     for phrase in phrases:
         words = phrase.split()

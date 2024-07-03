@@ -21,20 +21,20 @@ def main():
         # Order status:
         if isOrderStatusRequest(user_input):
             order_id = input("Please provide your order ID: ")
-            print("Bot:", get_order_status(order_id))
+            print("Chatbot:", get_order_status(order_id))
 
         # Request Human rep:
         elif isHumanRepresentativeRequest(user_input):
             name, email, phone = request_human_representative_info()
             if name is None and email is None and phone is None:
-                print("Bot: Exit successful. No contact information was saved.")
+                print("Chatbot: Exit successful. No contact information was saved.")
             else:
-                print("Bot:", save_contact_info(name, email, phone))
+                print("Chatbot:", save_contact_info(name, email, phone))
 
         # Return Policy:
         elif isReturnPolicyRequest(user_input):
             user_input = input("You: ")
-            print("Bot:", get_return_policy_info(user_input))
+            print("Chatbot:", get_return_policy_info(user_input))
 
         # Auto chat response:
         else:

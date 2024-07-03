@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37fc50fc-a2d2-4d56-a2b9-754fa39c203c" name="Changes" comment="human rep works.">
-      <change afterPath="$PROJECT_DIR$/modules/order_status.py" afterDir="false" />
+    <list default="true" id="37fc50fc-a2d2-4d56-a2b9-754fa39c203c" name="Changes" comment="adjusted return policy">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/contact_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/contact_info.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/functions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/human_rep.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/human_rep.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/return_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/return_policy.py" afterDir="false" />
     </list>
@@ -28,6 +28,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -49,6 +52,27 @@
   }
 }]]></component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="e-commerce-chatbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui" />
         <item itemvalue="Python tests.Python tests in test_human_rep.py" />
         <item itemvalue="Python tests.Python tests in test_order_status.py" />
       </list>
@@ -146,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720001909966</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adjusted return policy">
+      <option name="closed" value="true" />
+      <created>1720006656742</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720006656742</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -157,6 +190,7 @@
     <MESSAGE value="added context for the bot" />
     <MESSAGE value="added user input spell-check + order status flexability" />
     <MESSAGE value="human rep works." />
-    <option name="LAST_COMMIT_MESSAGE" value="human rep works." />
+    <MESSAGE value="adjusted return policy" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted return policy" />
   </component>
 </project>
