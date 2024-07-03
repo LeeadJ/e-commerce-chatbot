@@ -1,8 +1,13 @@
 import os
-from modules.functions import correct_spelling, isOrderStatusRequest, get_order_status, save_contact_info
+from modules.order_status import isOrderStatusRequest, get_order_status
 from modules.config import get_gpt_response
-from modules.human_rep import isHumanRepresentativeRequest, request_human_representative_info
+from modules.human_rep import isHumanRepresentativeRequest, request_human_representative_info, save_contact_info
 from modules.return_policy import isReturnPolicyRequest, get_return_policy_info
+from textblob import TextBlob
+
+def correct_spelling(user_input):
+    corrected_input = str(TextBlob(user_input).correct())
+    return corrected_input
 
 def main():
     while True:
@@ -28,6 +33,7 @@ def main():
 
         # Return Policy:
         elif isReturnPolicyRequest(user_input):
+            user_input = input("You: ")
             print("Bot:", get_return_policy_info(user_input))
 
         # Auto chat response:

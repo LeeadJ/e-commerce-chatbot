@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fc50fc-a2d2-4d56-a2b9-754fa39c203c" name="Changes" comment="human rep works.">
-      <change afterPath="$PROJECT_DIR$/modules/return_policy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/order_status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/contact_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/contact_info.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/human_rep.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/human_rep.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/return_policy.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/return_policy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

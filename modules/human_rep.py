@@ -1,4 +1,5 @@
 import re
+import csv
 
 def is_valid_name(name):
     return bool(re.match(r"^[A-Za-z]+(?: [A-Za-z]+)+$", name))
@@ -40,10 +41,16 @@ def isHumanRepresentativeRequest(user_input):
         'contact human', 'contact representative', 'need help from a person', 'need to talk to someone',
         'connect me with a human', 'connect with a representative', 'human assistance', 'real person',
         'live agent', 'customer service', 'customer support', 'talk someone', 'talk human', 'speak human',
-        'talk person', 'speak person', 'contact person'
+        'talk person', 'speak person', 'contact person', 'human rep', 'want rep', 'need rep'
     ]
     for phrase in phrases:
         words = phrase.split()
         if all(word in user_input for word in words):
             return True
     return False
+
+def save_contact_info(name, email, phone):
+    with open('data/contact_info.csv', mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([name, email, phone])
+    return "Your contact information has been saved. A representative will contact you shortly."
