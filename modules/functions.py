@@ -5,15 +5,20 @@ def correct_spelling(user_input):
     corrected_input = str(TextBlob(user_input).correct())
     return corrected_input
 
-def isOrderStatus(user_input):
-    if any(all(word in user_input.lower() for word in phrase.split()) for phrase in [
+def isOrderStatusRequest(user_input):
+    phrases = [
         'order status', 'status of my order', 'where is my order',
         'status of my delivery', 'status of my shipment', 'status of my package',
         'order update', 'order tracking', 'delivery status', 'shipment status', 'package status',
         'happening shipment', 'package on way', 'order dispatch'
-    ]):
-        return True
+    ]
+    for phrase in phrases:
+        words = phrase.split()
+        if all(word in user_input for word in words):
+            return True
     return False
+
+
 
 
 def get_order_status(order_id):
@@ -38,5 +43,8 @@ def get_return_policy_info(question):
         "Are there any items that cannot be returned under this policy?": "Yes, certain items such as clearance merchandise, perishable goods, and personal care items are non-returnable. Please check the product description or ask a store associate for more details.",
         "How will I receive my refund?": "Refunds will be issued to the original form of payment. If you paid by credit card, the refund will be credited to your card."
     }
-    normalized_question = question.strip().lower()
-    return responses.get(normalized_question, "Sorry, I don't have information on that.")
+    question = question.strip().lower()
+    for query, response in responses.items():
+        if all(word in question for word in query.split()):
+            return response
+    return "Sorry, I don't have information on that."

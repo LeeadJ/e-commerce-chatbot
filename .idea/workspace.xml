@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37fc50fc-a2d2-4d56-a2b9-754fa39c203c" name="Changes" comment="" />
+    <list default="true" id="37fc50fc-a2d2-4d56-a2b9-754fa39c203c" name="Changes" comment="human rep works.">
+      <change afterPath="$PROJECT_DIR$/modules/return_policy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/functions.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,6 +30,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="2idxVBlf2egaaSDcOrU1inHfhuC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +45,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="e-commerce-chatbot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +67,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_human_rep.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_human_rep.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_order_status.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="e-commerce-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_order_status.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests in test_human_rep.py" />
+        <item itemvalue="Python tests.Python tests in test_order_status.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,6 +111,49 @@
       <option name="presentableId" value="Default" />
       <updated>1719834276530</updated>
     </task>
+    <task id="LOCAL-00001" summary="bot works, restructured function file">
+      <option name="closed" value="true" />
+      <created>1719916297287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719916297287</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added context for the bot">
+      <option name="closed" value="true" />
+      <created>1719934189657</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719934189657</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added user input spell-check + order status flexability">
+      <option name="closed" value="true" />
+      <created>1719934271581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719934271581</updated>
+    </task>
+    <task id="LOCAL-00004" summary="human rep works.">
+      <option name="closed" value="true" />
+      <created>1720001909966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720001909966</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bot works, restructured function file" />
+    <MESSAGE value="added context for the bot" />
+    <MESSAGE value="added user input spell-check + order status flexability" />
+    <MESSAGE value="human rep works." />
+    <option name="LAST_COMMIT_MESSAGE" value="human rep works." />
   </component>
 </project>

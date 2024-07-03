@@ -27,6 +27,7 @@ def get_gpt_response(user_input):
         {"role": "assistant", "content": "Your order with ID 12345 is currently out for delivery and expected to arrive by [date/time]."},
         {"role": "user", "content": "Thank you!"},
         {"role": "assistant", "content": "You're welcome! Is there anything else I can assist you with?"},
+        {"role": "system", "content": "You: " + user_input}
     ]
 
     response = openai.chat.completions.create(
